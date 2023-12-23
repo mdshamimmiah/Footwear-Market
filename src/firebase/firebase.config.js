@@ -1,3 +1,6 @@
+
+
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
@@ -6,16 +9,15 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAcSwt7MbmLHtTVcO59ppufwzF-yW69Fms",
-  authDomain: "booking-room-a514f.firebaseapp.com",
-  projectId: "booking-room-a514f",
-  storageBucket: "booking-room-a514f.appspot.com",
-  messagingSenderId: "1017275376870",
-  appId: "1:1017275376870:web:83cfa25734ee97f63a0727"
+  apiKey: "AIzaSyAnDFOtq59_Em_iU-IN3ywQsso9bjoo-K0",
+  authDomain: "footwear-market-cc2ef.firebaseapp.com",
+  projectId: "footwear-market-cc2ef",
+  storageBucket: "footwear-market-cc2ef.appspot.com",
+  messagingSenderId: "287835511828",
+  appId: "1:287835511828:web:bf104136b9c40d9ee51b01"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
 const auth = getAuth(app);
 export default auth;

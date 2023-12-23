@@ -1,7 +1,18 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Navber = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
 
+  const {user , logOut} = useContext(AuthContext);
+
+  const handleLogOut = () =>{
+    logOut()
+    .then(() => console.log('user logged out successfully'))
+    .catch(error => console.error (error))
+  }
     const navlinks = <>
     <div className='flex gap-2'>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/'>Home Page</NavLink></li>
@@ -31,7 +42,25 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          {
+           user? <>
+
+
+<a onClick={handleLogOut} className="btn btn-sm rounded-full bg-black text-white shadow-[#f72e05]	shadow-2xl mr-2">Sign Out</a>
+
+              <div className="">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-10 rounded-full">
+                                            <img src={user?.photoURL} />
+
+                                        </div>
+                                    </label>
+
+                                </div>
+          
+           </> : <Link to='/login'className="shadow-[#f72e05]	shadow-2xl bg-black text-white btn btn-sm rounded-full">Login</Link>
+          }
+         
         </div>
       </div>
     );

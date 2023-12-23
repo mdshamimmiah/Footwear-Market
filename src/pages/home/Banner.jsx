@@ -4,7 +4,7 @@ const Banner = () => {
     return (
       <div className="">
           <div className="relative">
-            <img className="h-full lg:h-[500px] w-[1400px] mx-auto p-10 " src="https://i.ibb.co/6YNQCHt/bannernew1.jpg" alt="" />
+            <img className="lg:h-[600px] h-[500px] w-[1100px] mx-auto p-10 " src="https://i.ibb.co/3R8Ng6K/banner.jpg" alt="" />
           
         </div>
         <div className="absolute -mt-[270px] lg:-mt-[320px] ">

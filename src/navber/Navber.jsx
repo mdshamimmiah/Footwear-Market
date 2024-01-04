@@ -16,7 +16,7 @@ const Navber = () => {
     const navlinks = <>
     <div className='flex gap-2'>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/'>Home Page</NavLink></li>
-        <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/album'>Gallery page</NavLink></li>
+        <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/addProduct'>AddProduct</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/trainer'>Trainer Page</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/login'>Login</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/register'>Register</NavLink></li>
@@ -34,7 +34,7 @@ const Navber = () => {
             {navlinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <img className="w-[60px] bg-white " src="https://i.ibb.co/Q92GkgV/shoes-removebg-preview.png" alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

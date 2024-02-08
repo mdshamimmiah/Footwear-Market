@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 
 
 const Brand = () => {
     return (
 
-        <div>
+        <div data-aos="fade-down-right">
 
             <h1 className="text-purple-600 text-center text-5xl mb-5 font-extrabold"><i>YOUR BRANDS</i></h1>
 

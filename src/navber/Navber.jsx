@@ -17,14 +17,14 @@ const Navber = () => {
     <div className='flex gap-2'>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/'>Home Page</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/addProduct'>AddProduct</NavLink></li>
-        <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/trainer'>Trainer Page</NavLink></li>
+        <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/myCard'>My Card</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/login'>Login</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/register'>Register</NavLink></li>
         </div>
 
                         </>
     return (
-        <div className="navbar bg-black">
+        <div className="navbar bg-black fixed z-10 max-w-screen-xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

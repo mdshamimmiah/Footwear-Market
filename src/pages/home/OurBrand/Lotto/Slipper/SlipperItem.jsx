@@ -24,7 +24,7 @@ const SlipperItem = () => {
 
   const axiosPublic = useAxiosPublic();
   useEffect(() => {
-    axiosPublic.get(`/SlipperItem/${user?.email}`)
+    axiosPublic.get(`/slipperItem/${user?.email}`)
       .then(res => setData(res.data))
 
 

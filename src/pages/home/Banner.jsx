@@ -2,7 +2,7 @@ import img from '../../assets/banner10.jpg'
 
 const Banner = () => {
     return (
-      <div className="">
+      <div data-aos="fade-up-left">
           <div className="relative">
             <img className="lg:h-[600px] h-[500px] w-[1250px] mx-auto p-10 " src={img} alt="" />
           

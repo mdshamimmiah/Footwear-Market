@@ -11,6 +11,8 @@ import AddProduct from "../pages/home/OurBrand/AddProduct/AddProduct";
 import SlipperItem from "../pages/home/OurBrand/Lotto/Slipper/SlipperItem";
 import Apex from "../pages/home/OurBrand/Apex/Apex";
 import Details from "../pages/home/OurBrand/Lotto/Details/Details";
+import Shop from "../component/Shop/Shop";
+import AddToCart from "../pages/MyCart/AddToCart";
 
 
 
@@ -60,6 +62,14 @@ import Details from "../pages/home/OurBrand/Lotto/Details/Details";
           path:'/apex',
           element:
           <Apex></Apex>
+        },
+        {
+         path:'/shop',
+         element:<Shop></Shop>
+        },
+        {
+         path:'/myCard',
+         element:<AddToCart></AddToCart>
         }
       ]
     },

@@ -105,6 +105,7 @@ const AddProduct = () => {
                                     <option>Sponge</option>
                                     <option>Slipper</option>
                                     <option>Slide</option>
+                                    <option>Shoe</option>
                                    
                                 </select>
                                 <select name="brand" className="select select-bordered mt-3 mb-3 ml-16 mr-[2px] w-[500px]" >Brand

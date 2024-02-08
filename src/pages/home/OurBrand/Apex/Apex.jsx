@@ -18,16 +18,19 @@ const Apex = () => {
             <h1 className='text-center text-2xl text-purple-500 mt-3'>See More</h1>
          </div>
         </Link>
+        <Link to='/products/Apex/Loafer'>
          <div className='border border-solid border-purple-600 mx-auto p-4'>
             <img className='w-[400px]' src={img2} alt="" />
             <h1 className='text-5xl text-white text-center font-extrabold'>Loafer</h1>
             <h1 className='text-center text-2xl text-purple-500 mt-3'>See More</h1>
          </div>
+         </Link>
          <div className='border border-solid border-purple-600 mx-auto p-4'>
             <img className='w-[400px]' src={img3} alt="" />
             <h1 className='text-5xl text-white text-center font-extrabold'>Slide</h1>
             <h1 className='text-center text-2xl text-purple-500 mt-3'>See More</h1>
          </div>
+        
          <div className='border border-solid border-purple-600 mx-auto p-4'>
             <img className='w-[400px]' src={img4} alt="" />
             <h1 className='text-5xl text-white text-center font-extrabold'>Shoe</h1>

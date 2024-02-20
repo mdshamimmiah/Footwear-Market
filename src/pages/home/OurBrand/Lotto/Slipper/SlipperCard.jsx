@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const SlipperCard = ({item}) => {
+  // console.log(item);
     const {_id,name,description,price,rating,image} = item;
 
     return (
@@ -24,11 +25,3 @@ const SlipperCard = ({item}) => {
 };
 
 export default SlipperCard;
-
-
-
-// {
-//   path:'/trainerBookedPage/:id/:timeslot',
-//   element:<Slot></Slot>,
-//   loader: ({ params }) => fetch(`https://fitness-tracker-server-green.vercel.app/trainer/${params.id}`)
-// }

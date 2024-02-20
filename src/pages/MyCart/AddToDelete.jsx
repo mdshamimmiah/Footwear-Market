@@ -4,7 +4,7 @@ import AddToCart from "./AddToCart";
 
 
 const AddToDelete = ({item,handleControll}) => {
-
+// console.log(item.length);
     const axiosPublic = useAxiosPublic();
 
     const handleDelete = (id) => {
@@ -34,6 +34,7 @@ const AddToDelete = ({item,handleControll}) => {
     
       
     }
+  
     return (
         <div className="">
             
@@ -48,8 +49,9 @@ const AddToDelete = ({item,handleControll}) => {
                                 <button className="btn btn-outline text-white">Update</button>
                             </div>
                         </div>
+                       
                     </div>
-                  
+                   
                 </div>)
       
 

@@ -13,6 +13,7 @@ import Apex from "../pages/home/OurBrand/Apex/Apex";
 import Details from "../pages/home/OurBrand/Lotto/Details/Details";
 import Shop from "../component/Shop/Shop";
 import AddToCart from "../pages/MyCart/AddToCart";
+import Update from "../component/Update/Update";
 
 
 
@@ -70,7 +71,14 @@ import AddToCart from "../pages/MyCart/AddToCart";
         {
          path:'/myCard',
          element:<AddToCart></AddToCart>
+        },
+        {
+        path:'/update/:id',
+        element: <Update></Update>,
+        loader: ({ params }) => fetch(`http://localhost:5000/addItem/${params.id}`)
+      
         }
+        
       ]
     },
   ]);

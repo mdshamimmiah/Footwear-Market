@@ -14,6 +14,7 @@ import Details from "../pages/home/OurBrand/Lotto/Details/Details";
 import Shop from "../component/Shop/Shop";
 import AddToCart from "../pages/MyCart/AddToCart";
 import Update from "../component/Update/Update";
+import Bata from "../pages/home/OurBrand/Bata/Bata";
 
 
 
@@ -57,12 +58,16 @@ import Update from "../component/Update/Update";
         {
           path:'/details/:id',
           element:<Details></Details>,
-          loader: ({ params }) => fetch(`https://footwear-market-server.vercel.app//details/${params.id}`)
+          loader: ({ params }) => fetch(`https://footwear-market-server.vercel.app/details/${params.id}`)
         },
         {
           path:'/apex',
           element:
           <Apex></Apex>
+        },
+        {
+          path:'/bata',
+          element:<Bata></Bata>
         },
         {
          path:'/shop',

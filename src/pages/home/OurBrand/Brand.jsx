@@ -58,7 +58,7 @@ const Brand = () => {
                             <div className="modal-action">
                                 <form method="dialog" className="mx-auto gap-3">
                                     {/* if there is a button in form, it will close the modal */}
-                                    <Link to=''> <button className="btn mr-3">Open</button></Link>
+                                    <Link to='/bata'> <button className="btn mr-3">Open</button></Link>
                                     <button className="btn">Close</button>
                                 </form>
                             </div>

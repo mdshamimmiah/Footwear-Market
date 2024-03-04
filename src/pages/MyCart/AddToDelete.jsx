@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Swal from "sweetalert2";
 import useAxiosPublic from "../../component/Hooks/useAxiosPublic";
-import AddToCart from "./AddToCart";
+
 import { Link } from "react-router-dom";
 
 const AddToDelete = ({ item, handleControll }) => {

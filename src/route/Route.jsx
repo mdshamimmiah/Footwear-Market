@@ -57,7 +57,7 @@ import Update from "../component/Update/Update";
         {
           path:'/details/:id',
           element:<Details></Details>,
-          loader: ({ params }) => fetch(`http://localhost:5000/details/${params.id}`)
+          loader: ({ params }) => fetch(`https://footwear-market-server.vercel.app//details/${params.id}`)
         },
         {
           path:'/apex',
@@ -75,7 +75,7 @@ import Update from "../component/Update/Update";
         {
         path:'/update/:id',
         element: <Update></Update>,
-        loader: ({ params }) => fetch(`http://localhost:5000/addItem/${params.id}`)
+        loader: ({ params }) => fetch(`https://footwear-market-server.vercel.app//addItem/${params.id}`)
       
         }
         

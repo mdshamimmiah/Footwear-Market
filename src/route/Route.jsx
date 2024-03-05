@@ -80,7 +80,7 @@ import Bata from "../pages/home/OurBrand/Bata/Bata";
         {
         path:'/update/:id',
         element: <Update></Update>,
-        loader: ({ params }) => fetch(`https://footwear-market-server.vercel.app//addItem/${params.id}`)
+        loader: ({ params }) => fetch(`https://footwear-market-server.vercel.app/details/${params.id}`)
       
         }
         

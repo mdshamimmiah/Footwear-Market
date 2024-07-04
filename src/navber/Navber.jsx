@@ -17,9 +17,11 @@ const Navber = () => {
     <div className='flex gap-2'>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/'>Home Page</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/addProduct'>AddProduct</NavLink></li>
+        <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/gallary'>Gallary</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/myCard'>My Card</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/login'>Login</NavLink></li>
         <li className="shadow-[#f72e05]	shadow-2xl bg-black text-white"><NavLink to='/register'>Register</NavLink></li>
+        
         </div>
 
                         </>
@@ -34,7 +36,9 @@ const Navber = () => {
             {navlinks}
             </ul>
           </div>
-          <img className="w-[60px] bg-white " src="https://i.ibb.co/Q92GkgV/shoes-removebg-preview.png" alt="" />
+         <Link to="/dashboard">
+         <img className="w-[60px] bg-white rounded-full " src="https://i.ibb.co/Q92GkgV/shoes-removebg-preview.png" alt="" />
+         </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -62,6 +66,7 @@ const Navber = () => {
           }
          
         </div>
+       
       </div>
     );
 };

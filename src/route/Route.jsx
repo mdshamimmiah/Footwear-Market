@@ -15,6 +15,11 @@ import Shop from "../component/Shop/Shop";
 import AddToCart from "../pages/MyCart/AddToCart";
 import Update from "../component/Update/Update";
 import Bata from "../pages/home/OurBrand/Bata/Bata";
+import FootwearGallary from "../pages/galary/FootwearGallary";
+import Dashboard from "../dashboard/Dashboard";
+
+import Bayer from "../dashboard/bayer/Bayer";
+
 
 
 
@@ -27,7 +32,7 @@ import Bata from "../pages/home/OurBrand/Bata/Bata";
       children:[
         {
          path:'/',
-         element:<Home></Home> 
+        element:<Home></Home>
         },
         {
           path:'/addProduct',
@@ -58,7 +63,7 @@ import Bata from "../pages/home/OurBrand/Bata/Bata";
         {
           path:'/details/:id',
           element:<Details></Details>,
-          loader: ({ params }) => fetch(`https://footwear-market-server.vercel.app/details/${params.id}`)
+          loader: ({ params }) => fetch(`http://localhost:5000/details/${params.id}`)
         },
         {
           path:'/apex',
@@ -78,11 +83,27 @@ import Bata from "../pages/home/OurBrand/Bata/Bata";
          element:<AddToCart></AddToCart>
         },
         {
+         path:'/gallary',
+         element:<FootwearGallary></FootwearGallary>
+        },
+        {
         path:'/update/:id',
         element: <Update></Update>,
-        loader: ({ params }) => fetch(`https://footwear-market-server.vercel.app/details/${params.id}`)
+        loader: ({ params }) => fetch(`footwear-market-server.vercel.app/details/${params.id}`)
       
-        }
+        },
+        {
+          path:'dashboard',
+          element:<Dashboard></Dashboard>,
+          children:[
+                  // admin route
+              {
+                  path:'subscribers',
+                  element:<Bayer></Bayer>
+              },
+              
+          ]
+      }
         
       ]
     },

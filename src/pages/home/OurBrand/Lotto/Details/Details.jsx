@@ -27,7 +27,7 @@ const Details = () => {
     .then(res => {
         console.log(res.data);
         Swal.fire({
-            position: "top-end",
+            position: "top-center",
             icon: "success",
             title: "Product AddToCard successfully",
             showConfirmButton: false,

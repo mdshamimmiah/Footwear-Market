@@ -5,6 +5,7 @@ import Brand from "./OurBrand/Brand";
 import Category from "./Category/Category";
 import Search from "./Search";
 import Banner2 from "./Banner2/Banner2";
+import About from "./about/About";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
           <Brand></Brand>
           <Category></Category>
           <Banner2></Banner2>
+          <About></About>
         </div>
     );
 };
